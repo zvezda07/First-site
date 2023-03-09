@@ -20,24 +20,53 @@ ul {
     padding: 0 12px;
 }
 
+.header {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background: rgb(137, 27, 154);
+}
+
 .header__nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px 0;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .header__list {
     display: flex;
     gap: 24px;
+    flex-wrap: wrap;
 }
 
 .header__logo {
     font-size: 36px;
     text-transform: uppercase;
+    color: white;
 }
 
 .header__link {
     font-size: 20px;
     text-transform: capitalize;
+    color: white;
 }
+
+.box {
+    flex-grow: 1;
+    display: grid;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.box__logo {
+    padding: 20px 200px;
+    font-size: 30px;
+    font-weight: 700;
+    color: white;
+}
+
